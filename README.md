@@ -51,7 +51,7 @@ Summarizes conservation of synteny by extracting information from GFF files from
     Synteny/results.txt
     This shows if orthologs per-taxon are neighboring each other.
     GCF_000737145.1	CAB76983.1	CAB76984.1	CAB76985.1
-    GCF_000278665.1		        CAB76984.1  CAB76985.1
+    GCF_000278665.1		        CAB76984.1	CAB76985.1
     GCF_000069245.1		        CAB76984.1
     GCF_000472005.1	CAB76983.1	CAB76984.1	CAB76985.1
     
@@ -61,4 +61,4 @@ Summarizes conservation of synteny by extracting information from GFF files from
     This means, a single protein is not able to form a cluster.
     Example:
     2  CAB76983.1	CAB76984.1	CAB76985.1
-    1  		        CAB76984.1  CAB76985.1
+    1		        CAB76984.1	CAB76985.1
