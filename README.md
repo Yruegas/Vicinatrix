@@ -4,6 +4,7 @@
 
 ###   Sample command:   ###
 
+    Arguments are separated by spaces.
     bash vicinatrix_v3.sh <profile> <gff_dir> <window_size> <taxon_order> <output_name>
     bash vicinatrix_v3.sh cluster_prots.profile mod_gff/ 3 taxon_order.txt results
 
