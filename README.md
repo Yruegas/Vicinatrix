@@ -49,6 +49,9 @@
 ### Output name ###
     A file with said name will appear in the two output directories.
 
+### Output files ###
+    Three types of files are produced in newly created directories:
+
     Synteny/results.txt
     This shows if orthologs per-taxon are neighboring each other.
     Protein IDs are substituted for the OG name.
@@ -67,3 +70,12 @@
     Example:
     2  CAB76983.1	CAB76984.1	CAB76985.1
     1		CAB76984.1	CAB76985.1
+
+    Score/results.txt
+    Calculates per genome: Largest neighborhood / expected neighborhood size.
+
+    Example:
+    GCF_000737145.1	1
+    GCF_000278665.1	0.66
+    GCF_000069245.1	0.33
+    GCF_000472005.1	1
