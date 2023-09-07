@@ -33,6 +33,7 @@ if [[ $(cut -f1,2 $profile | sort | uniq -c | grep -v " 1 " | wc -l) -ge 1 ]] ;
 if [[ $(ls | grep -w "tmp" | wc -l) -eq 0 ]] ; then mkdir tmp; fi
 if [[ $(ls | grep -w "Synteny" | wc -l) -eq 0 ]] ; then mkdir Synteny; fi
 if [[ $(ls | grep -w "Frequency" | wc -l) -eq 0 ]] ; then mkdir Frequency; fi
+if [[ $(ls | grep -w "Score" | wc -l) -eq 0 ]] ; then mkdir Score; fi
 
 ### Effective taxa = taxa with at least one ortholog in a cluster ###
 join -t $'\t' <(cat -n $order | sed 's/^ \+//' | awk -F "\t" '{print $2 "\t" $1}' | sort -k1,1) <(cut -f2 $profile | sort -u)   | awk -F "\t" '{print $2 "\t" $1}' | sort -g | cut -f2 > tmp/effective_taxa.txt
