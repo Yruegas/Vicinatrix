@@ -50,15 +50,19 @@ Summarizes conservation of synteny by extracting information from GFF files from
 
     Synteny/results.txt
     This shows if orthologs per-taxon are neighboring each other.
+    Protein IDs are substituted for the OG name.
+    Inversions and other changes of gene order are not considered. Only if they remain in the same neighborhood given the window size
+    
     GCF_000737145.1	CAB76983.1	CAB76984.1	CAB76985.1
     GCF_000278665.1		        CAB76984.1	CAB76985.1
     GCF_000069245.1		        CAB76984.1
     GCF_000472005.1	CAB76983.1	CAB76984.1	CAB76985.1
     
     Frequency/results.txt
-    This will show, how often we see each of the compositions.
+    This will show, how often we see each of the compositions. Useful to see the more dominant gene clusters (first column)
     Note that a cluster composition is accounted only as long as a taxon holds two or more orthologs.
     This means, a single protein is not able to form a cluster.
+    
     Example:
     2  CAB76983.1	CAB76984.1	CAB76985.1
     1		CAB76984.1	CAB76985.1
