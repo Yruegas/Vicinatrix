@@ -15,7 +15,7 @@
     A collection of orthologous groups (OGs) that belong to the same gene cluster, such as a bacterial operon ###
     Sorted according to first column, where the OG names should appear in order of appearance in your reference genome.
     Exclude paralogs from the profile.
-    One way to prepare this file using the fdog output and NCBI data:
+    One way to prepare this is by using an orthology prediction tool, such as fDOG:
     
     OG1	Tax_1	Prot_1
     OG1	Tax_2	Prot_2
