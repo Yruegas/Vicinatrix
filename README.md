@@ -1,16 +1,12 @@
 # Vicinatrix
 Summarizes conservation of synteny by extracting information from GFF files from a given set of genomes
 
-###########################
 ###   Sample command:   ###
-###########################
 
-bash vicinatrix_v3.sh <profile> <gff_dir> <window_size> <taxon_order> <output_name>
-bash vicinatrix_v3.sh cluster_prots.profile mod_gff/ 3 taxon_order.txt results
+    bash vicinatrix_v3.sh <profile> <gff_dir> <window_size> <taxon_order> <output_name>
+    bash vicinatrix_v3.sh cluster_prots.profile mod_gff/ 3 taxon_order.txt results
 
-#############################
-#####   Input details   #####
-#############################
+###   Input details   ###
     # Tab separated. See examples:
 
 ### Phylogenetic profile ###
