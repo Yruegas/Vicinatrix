@@ -61,4 +61,4 @@ Summarizes conservation of synteny by extracting information from GFF files from
     This means, a single protein is not able to form a cluster.
     Example:
     2  CAB76983.1	CAB76984.1	CAB76985.1
-    1		        CAB76984.1	CAB76985.1
+    1		CAB76984.1	CAB76985.1
