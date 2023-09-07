@@ -70,4 +70,14 @@ if [[ $(echo $orph | wc -c) -ne 1 ]] ;  then
      else
      cut -f1 --complement Synteny/$out.txt | sort | uniq -c | sed -e 's/ \+//' -e 's/ /\t/' > Frequency/$out.txt;
 fi
+
+### Neighborhood Score ###
+# Calculate per genome: Largest neighborhood / expected neighborhood size.
+total=$(cut -f1 --complement Synteny/$out.txt | sed 's/\t/\n/g' | sort -u | grep -v "^$" | wc -l)
+cat Synteny/$out.txt  | sed -e 's/\t/___/g' | sed 's/___/\t/' | while read n k;
+    do
+    echo $k | sed 's/___/\n/g' | sort -u | grep -v "^$" | wc -l | sed "s/^/$n\t/";
+  done | sort -k2,2 -r | sort -u -k1,1 | awk -F "\t" -v total=$total '{print $1 "\t" $2/total}' > Score/$out.txt
+
+# Script has finished
 echo "$out"
