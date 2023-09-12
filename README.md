@@ -25,10 +25,9 @@
     OG2	Tax_3	Prot_6
 
 ### GFF dir ###
-    This is a directory that collects TAXON_NAME.gff
+    This is a directory that contains a collection of TAXON_NAME.gff files
     TAXON_NAME should be identical as it appears in the phylogenetic profile
-    For instance, adjust the following sample script from a genome assembly from GenBank:
-    grep "CDS" Tax_1_genomic.gff | grep -v "pseudo=true" | sed -e 's/ID=.*protein_id=//' -e 's/;.*//' | cut -f1,4,5,7,9 > mod_gff/Tax_1.gff
+    GFF files contain only the following 5 columns:
     
     Replicon 	Start 	End 	Strand 	Protein ID
     JQLE01000001 	141 	959 	+ 	GCA_000746395_00001
@@ -48,7 +47,7 @@
     Tax_3
 
 ### Output name ###
-    A file with said name will appear in the two output directories.
+    A file with said name will appear in the three output directories.
 
 ### Output files ###
     Three types of files are produced in newly created directories:
